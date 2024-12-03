@@ -3,7 +3,7 @@
 1. Clone the repository to your machine.
 
    ```
-   git clone https://github.com/rajshah04/AuthRouting.git
+   git clone https://github.com/rajshah04/Role-based-Access.git
    ```
    
 2. Install the required packages in the main folder
