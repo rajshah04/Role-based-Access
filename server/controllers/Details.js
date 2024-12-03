@@ -5,6 +5,8 @@ exports.getStudentDetails = async(req, res) => {
     try{
         const {email} = req.body ;
 
+        // console.log("Email : ", email) ;
+
         if(!email){
             return res.status(400).json({
                 success: false,
@@ -35,6 +37,8 @@ exports.getInstructorDetails = async(req, res) => {
     try{
         const {email} = req.body ;
 
+        console.log("Email : ", email) ;
+
         if(!email){
             return res.status(400).json({
                 success: false,
@@ -64,6 +68,8 @@ exports.getInstructorDetails = async(req, res) => {
 exports.getAdminDetails = async(req, res) => {
     try{
         const {email} = req.body ;
+
+        console.log("Email : ", email) ;
 
         if(!email){
             return res.status(400).json({
