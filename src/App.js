@@ -31,11 +31,23 @@ function App() {
           </OpenRoute>
           } />
 
-        <Route path='/details/admin' element={<AdminDetails />} />
+        <Route path='/details/admin' element={
+            <PrivateRoute>
+              <AdminDetails />
+            </PrivateRoute>
+          } />
 
-        <Route path='/details/instructor' element={<InstructorDetails />} />
+        <Route path='/details/instructor' element={
+            <PrivateRoute>
+              <InstructorDetails />
+            </PrivateRoute>
+          } />
 
-        <Route path='/details/student' element={<StudentDetails />} />
+        <Route path='/details/student' element={
+            <PrivateRoute>
+              <StudentDetails />
+            </PrivateRoute>
+          } />
 
       </Routes>
       
