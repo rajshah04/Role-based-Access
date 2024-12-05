@@ -36,7 +36,7 @@ const AdminDetails = () => {
 
             {
                 loading && (
-                    <div className='w-full'>
+                    <div className='w-full h-[80vh] flex items-center justify-center'>
                         <div className='spinner'>
 
                         </div>
